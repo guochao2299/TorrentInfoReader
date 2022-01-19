@@ -141,7 +141,7 @@ namespace TorrentInfoReader
                    !string.IsNullOrEmpty(txtRemovePostfix.Text) &&
                    fr.ProcessedFileName.EndsWith(txtRemovePostfix.Text))
                 {
-                    fr.ProcessedFileName.Substring(0, fr.ProcessedFileName.Length - txtRemovePostfix.Text.Length);
+                    fr.ProcessedFileName = fr.ProcessedFileName.Substring(0, fr.ProcessedFileName.Length - txtRemovePostfix.Text.Length);
                 }
 
                 foreach(string findDir in lstFindPathes.Items)
